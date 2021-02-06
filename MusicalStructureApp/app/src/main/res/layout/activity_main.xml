@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/playlist_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height">
+
+        <TextView
+            android:id="@+id/playlists"
+            style="@style/Element"
+            android:layout_weight="1"
+            android:background="@color/element"
+            android:text="@string/playlist"/>
+
+        <ImageView
+            android:id="@+id/imageView_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:scaleType="centerCrop"
+            android:src="@drawable/playlist"
+            tools:srcCompat="@tools:sample/avatars" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/liked_trackes_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height">
+
+        <TextView
+            android:id="@+id/liked_tracks"
+            style="@style/Element"
+            android:layout_weight="1"
+            android:background="@color/element"
+            android:text="@string/liked_tracks"/>
+
+        <ImageView
+            android:id="@+id/imageView_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:scaleType="centerCrop"
+            android:src="@drawable/liked_tracks"
+            tools:srcCompat="@tools:sample/avatars" />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/albums_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_item_height">
+
+            <TextView
+                android:id="@+id/albums"
+                style="@style/Element"
+                android:layout_weight="1"
+                android:background="@color/element"
+                android:text="@string/albums"/>
+
+            <ImageView
+                android:id="@+id/imageView_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:scaleType="centerCrop"
+                android:src="@drawable/album"
+                tools:srcCompat="@tools:sample/avatars" />
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
